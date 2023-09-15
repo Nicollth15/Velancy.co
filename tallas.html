@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo-circular.png" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Guia de tallas</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="css/tallas.css" />
+
+    <!-- The website JavaScript file -->
+
+  </head>
+  <body>
+
+    <!-------------------- INICIO MENU ------------------------------->
+    <div class="contenedor">
+
+      <!--------------------------------------------MENU PEQUEÑO------------------------------->
+      <nav class="menu-pq">
+      
+        <div class="logo">
+          <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+        
+      </div>
+      
+      
+       <span class="menubtn" onclick="openNav()">&#9776; </span>
+      
+        <div class="sideNav" id="sidenav" >
+         <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+          <a href="index.html" class="item-menu">INICIO</a>
+        <a href="nosotros.html" class="item-menu">NOSOTROS</a>
+        <a href="catalogo.html" class="item-menu">CATALOGO</a>
+        <a href="sale.html" class="item-menu">SALE</a>
+        <a href="blog.html" class="item-menu">BLOG</a>
+          <div class="icono-carrito">
+            <a href="#" onclick="openWindow()"> <img
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+              width="30px"
+              height="30px"
+            /> </a> 
+          
+          </div>
+          <div class="offcanvas offcanvas-end show">
+            <div class="encabezado-carrito">
+              <h2>Mi carrito</h2>
+              <button id="cerrar" type="button"  onclick="closeWindow()">&#10006;</button>
+            </div>
+            <div class="contenedor-carrito">
+              <div class="producto-carrito"> Lista de productos 
+                <div id="lista-compras"></div>
+              </div>
+              
+              <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+            </div>
+          </div>
+        </div>
+        </nav>
+        
+      <!-------------------------------------------- FIN MENU PEQUEÑO------------------------------->
+  <nav id="menu">
+    <div class="contenedor-menu">
+    <div class="logo">
+       <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="nosotros.html">NOSOTROS</a></li>
+      <li>
+        <a href="catalogo.html">CATÁLOGO</a>
+       
+      </li>
+      <li><a href="sale.html">SALE</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+    </ul>
+   
+      <div class="icono-carrito">
+          <a href="#" onclick="openWindowG()"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+            width="30px"
+            height="30px"
+          /> </a> 
+        
+        </div>
+        <div class="offcanvas offcanvas-end show" id="uno">
+          <div class="encabezado-carrito">
+            <h2>Mi carrito</h2>
+            <button id="cerrar" type="button" onclick="closeWindowG()">&#10006;</button>
+          </div>
+          <div class="contenedor-carrito">
+            <div class="producto-carrito"> Lista de productos 
+              <div id="lista-compras" ></div>
+            </div>
+            
+            <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+        </div>
+        </div>
+    </div> 
+      </nav>
+
+<!-------------------- FIN MENU ------------------------------->
+  
+
+          
+          <section class="banner">
+            <div class="contenedor-banner"><h2>Guia de tallas</h2>
+              <p>Te asesoramos en la <br> 
+              mejor talla para tus prendas</p></div>
+                <button class="boton"></button>
+          </section>
+
+        <div class="tallas">
+          
+
+        <div class="contenido-tallas">
+        <h4>Contorno busto (cm)</h4>
+        <div class="flex">
+         <div class="arriba">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+         </div>
+         <div class="abajo">
+            <div>90-94</div>
+            <div>95-99</div>
+            <div>100-104</div>
+            <div>105-109</div>
+         </div>
+         <h4>Contorno cintura (cm)</h4>
+         <div class="arriba">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+         </div>
+         <div class="abajo">
+            <div>70-82</div>
+            <div>83-87</div>
+            <div>88-92</div>
+            <div>93-97</div>
+         </div>
+         <h4>Contorno cadera (cm)</h4>
+         <div class="arriba">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+         </div>
+         <div class="abajo">
+            <div>92-96</div>
+            <div>97-101</div>
+            <div>102-106</div>
+            <div>107-111</div>
+         </div>
+        </div>
+        </div>
+        </div>
+        <!-------------------- INICIO NEWSLETTER ------------------------------->
+        <article>
+    
+          <div class="newsletter">
+            <hr width="20%">
+            <h2>Suscríbete a nuestro newsletter</h2>
+            <p>
+              Recibe información de nuestro lanzamientos, promociones, novedades y eventos
+            </p>
+    
+           <input type="email" name="direccionemail" size="10" placeholder="Ej.: usuario@servidor.com">
+            <button>
+              <a href="#" id="boton1">Subscribirse</a>
+            </button>
+          </div>
+        </article>
+<!-------------------- FIN NEWSLETTER ------------------------------->
+
+    <!-------------------- INICIO FOOTER  PEQUEÑO------------------------------->
+
+ 
+    <section id="footer-pq">
+      <div class="contenedor-footer-pq">
+      <button class="accordion">Servicio al cliente</button>
+      <div class="panel">
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    
+      <button class="accordion">Comprar en Velancy</button>
+      <div class="panel">
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+    
+      <button class="accordion">Ayuda</button>
+      <div class="panel">
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        
+      </div>
+    
+      <div class="redes-logo">
+        <div class="logo-pq">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="redes-pq">
+          <h4>Siguenos en</h4>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+          /> </a> 
+        <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /> </a> 
+        <a href="https://pin.it/2Zpex0u" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>  
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    
+      <!-------------------- FIN FOOTER PEQUEÑO ------------------------------->
+
+       <!-------------------- INICIO FOOTER MEDIANO ------------------------------->
+ <section id="footer-mediano">
+  <div class="logo2">
+    <a href="index.html"> <img src="img/logo-footer.png"></a>
+  </div>
+  <div class="subtitulo">Siguenos en</div>
+  <div class="redes">
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+    /></a>
+    <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+    /></a>
+     <a href="https://pin.it/2Zpex0u" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+    /></a>
+  </div>
+<div class="servicio">
+  <h4>Servicio al cliente</h4>
+  <a href="devoluciones.html">Garantias y devoluciones</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+<div class="compras-velancy">
+  <h4>Comprar en Velancy</h4>
+  <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+</div>
+<div class="ayuda">
+  <h4>Ayuda</h4>
+  <a href="tallas.html">Guia de tallas</a>
+  <a href="comentarios.html">Reseñas</a>
+</div>
+</section>
+
+<!-------------------- FIN FOOTER MEDIANO ------------------------------->
+
+        <!-------------------- INICIO FOOTER ------------------------------->
+      <section id="footer">
+      <div class="contenedor-footer">
+      <div class="contenido">
+        <div class="logo2">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="subtitulo">Siguenos en</div>
+        <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /></a> 
+         <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /></a> 
+         <a href="https://pin.it/2Zpex0u" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>
+        </div>
+      </div>
+      <div class="servicio">
+        <h4>Servicio al cliente</h4>
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="compras-velancy">
+        <h4>Comprar en Velancy</h4>
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+      <div class="ayuda">
+        <h4>Ayuda</h4>
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        </div>
+      </div>
+    </section>
+      <!-------------------- FIN FOOTER  ------------------------------->
+        </div>
+        <script src="js/tallas.js" defer></script>
+    </body>
+    </html>

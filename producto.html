@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo-circular.png" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Chaqueta de jean</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="css/producto.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="js/producto.js" defer></script>
+  </head>
+  <body>
+    <!-------------------- INICIO MENU ------------------------------->
+    <div class="contenedor">
+      <nav class="menu-pq">
+      
+        <div class="logo">
+         <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+        
+    </div>
+    <span class="menubtn" onclick="openNav()">&#9776; </span>
+  
+        <div class="sideNav" id="sidenav" >
+          <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+          <a href="index.html" class="item-menu">INICIO</a>
+          <a href="nosotros.html" class="item-menu">NOSOTROS</a>
+          <a href="catalogo.html" class="item-menu">CATALOGO</a>
+          <a href="sale.html" class="item-menu">SALE</a>
+          <a href="blog.html" class="item-menu">BLOG</a>
+          <a href="#">
+            <div class="icono-carrito">
+              <a href="#" onclick="openWindow()"> <img
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+                width="30px"
+                height="30px"
+              /> </a> 
+            
+            </div>
+            <div class="offcanvas offcanvas-end show">
+              <div class="encabezado-carrito">
+                <h2>Mi carrito</h2>
+                <button id="cerrar" type="button" onclick="closeWindow()">&#10006;</button>
+              </div>
+              <div class="contenedor-carrito" id="contenedor-compra">
+                <div class="producto-carrito"> Lista de productos 
+                  <div class="lista-compras"></div>
+                </div>
+                
+                <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+              </div>
+            </div></a>
+        </div>
+        </nav>
+
+
+      <nav id="menu">
+        <div class="contenedor-menu">
+        <div class="logo">
+          <a href="#"><img src="img/logo-version-grande.png"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li>
+            <a href="catalogo.html">CATÁLOGO</a>
+      
+          </li>
+          <li><a href="sale.html">SALE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+       
+          <div class="icono-carrito">
+            <a href="#" onclick="openWindowG()"> <img
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+              width="30px"
+              height="30px"
+            /> </a> 
+          
+          </div>
+          <div class="offcanvas offcanvas-end show" id="uno">
+            <div class="encabezado-carrito">
+              <h2>Mi carrito</h2>
+              <button id="cerrar" type="button" onclick="closeWindowG()">&#10006;</button>
+            </div>
+            <div class="contenedor-carrito">
+              <div class="producto-carrito"> Lista de productos 
+                <div id="lista-compras"></div>
+              </div>
+              
+            <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+            </div>
+          </div>
+          </div>
+        
+        </nav>
+    
+    <!-------------------- FIN MENU ------------------------------->
+
+    <!-------------------- INICIO MAIN  ------------------------------->
+    <main>
+      <section class="fotos">
+
+        <div class="imagen1">
+          <img id="imageBox"
+            src="img/imagen-principal.png"
+          />
+        </div>
+
+        <div class="galeria">
+          <div> <img src="img/imagen-principal.png" onclick="myFunction(this)"></div>
+          <div><img src="img/prenda1.png"  onclick="myFunction(this)"></div>
+          <div> <img src="img/prenda2.png" onclick="myFunction(this)"></div>
+          <div> <img src="img/prenda3.png"  onclick="myFunction(this)"></div>
+        </div>
+      </section>
+
+      <div class="slide-productos-pq">
+
+      <img class="productos1" src="img/imagen-principal.png">
+      <img class="productos1" src="img/prenda1.png">
+      <img class="productos1" src="img/prenda2.png">
+      <img class="productos1" src="img/prenda3.png">
+
+      <button onclick="plusDivs(-1)" class="btn-item4-izq">  <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%202.png?v=1686004640681"
+          /></button>
+      <button onclick="plusDivs(1)" class="btn-item4-der">
+      
+        <img
+        src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%201.png?v=1686004839477"
+      /></button>
+      </div>
+      <div class="descripciones">
+        <h4>Chaqueta denim vaquera clásica</h4>
+        <span>$160.000</span>
+        <p>
+          Es un básico que debes llevar para tu armario ya que las chaquetas vaqueras denim son adaptables en diferentes situaciones y funcionan bien con distintos estilos.
+        </p>
+        <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2060.png?v=1686002464171"
+        />
+        <div class="options">
+        <div>
+           <span>Color</span>
+          <div class="colors">
+            <div></div>
+            <div></div>
+          
+          </div>
+           <input type="number" min="0" max="5" step="1">
+          <button class="agregar-carrito" onclick="add('Chaqueta Denim vaquera clasica($160.000)')">
+            Agregar a la bolsa
+          </button>
+           </div>
+          
+          <div class="tallas">
+            <span class="subtitulo-talla">Talla</span>
+            <form action="#">
+      <select name="lenguajes" id="tallas">
+        <option value="Seleccion">Selecciona tu talla</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      
+        
+</form>
+    </div>
+      </div>
+        <button class="accordion"> <div><svg fill="#000000"  width="30" height="30" viewBox="0 0 24 24" id="measuring-tape-2" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M14,5a7,7,0,0,0-7,7v6a1,1,0,0,0,1,1h6A7,7,0,0,0,14,5Zm0,10a3,3,0,1,1,3-3A3,3,0,0,1,14,15Z" style="fill: #ffffff; stroke-width: 2;"></path><path id="primary" d="M4,14H7v4H4a1,1,0,0,1-1-1V15A1,1,0,0,1,4,14Zm10,1a3,3,0,1,0-3-3A3,3,0,0,0,14,15ZM8,19h6a7,7,0,0,0,7-7h0a7,7,0,0,0-7-7h0a7,7,0,0,0-7,7v6A1,1,0,0,0,8,19Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg> &nbsp;Guia de tallas</div></button>
+<div class="panel">
+  <a href="tallas.html">Guia de tallas</a>
+</div>
+
+<button class="accordion"> <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentcolor">
+  <path d="M14 13C14 14.1046 13.1046 15 12 15M17 6H17.01M17 13C17 15.7614 14.7614 18 12 18C9.23858 18 7 15.7614 7 13C7 10.2386 9.23858 8 12 8C14.7614 8 17 10.2386 17 13ZM6 21H18C19.1046 21 20 20.1046 20 19V5C20 3.89543 19.1046 3 18 3H6C4.89543 3 4 3.89543 4 5V19C4 20.1046 4.89543 21 6 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg> &nbsp;Cuidado de la prenda</div></button>
+
+<div class="panel">
+<img src="img/no-secar-en-secadora.png">
+<img src="img/fuego-lento.png" >
+</div>
+
+          </div>   
+      
+    </main>
+    
+    <!-------------------- INICIO SLIDE PRODUCTOS ------------------------------->
+    <section id="slide_productos">
+      <h2>Productos <span>destacados</span> de la semana</h2>
+      <div class="slide_products">
+        <div class="productos">
+          
+        
+        <div class="slide-1">
+          <div class="slide-product1" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Saco negro cuello v</p>
+            <span>$30.000</span>
+        </div>
+        <div class="slide-2">
+          <div class="slide-product2" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Crop top negro con encaje</p>
+          <span>$35.000</span>
+        </div>
+        <div class="slide-3">
+          <div class="slide-product3" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Skinny Jean oscuro</p>
+          <span>$80.000</span>
+        </div>
+
+        <div class="slide-4">
+          <div class="slide-product4" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Chaqueta cuero café</p>
+          <span>$150.000</span>
+        </div>
+</div>
+        
+        <div class="productos">
+          
+        
+        <div class="slide-5">
+          <div class="slide-product5" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Mom Jean claro</p>
+          <span>$90.000</span>
+        </div>
+        <div class="slide-6">
+          <div class="slide-product6" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Blusa blanca M/L encaje</p>
+            <span>$30.000</span>
+        </div>
+        <div class="slide-7">
+          <div class="slide-product7" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Camisa Elegante</p>
+          <span>$35.000</span>
+        </div>
+
+        <div class="slide-8">
+          <div class="slide-product8" onclick="window.location='producto.html'">
+            <img
+              class="compra"
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+            />
+          </div>
+          <p>Short corto rotos</p>
+          <span>$50.000</span>
+        </div>
+</div>
+        <button onclick="plusSlides(-1)" class="btn-izq2">
+          <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%202.png?v=1686004640681"
+          />
+        </button>
+        <button onclick="plusSlides(1)" class="btn-der2">
+          <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%201.png?v=1686004839477"
+          />
+        </button>
+      </div>
+      
+    </section>
+<!-------------------- FIN SLIDE PRODUCTOS ------------------------------->
+
+<!-------------------- INICIO FOOTER  PEQUEÑO------------------------------->
+
+ 
+<section id="footer-pq">
+  <div class="contenedor-footer-pq">
+  <button class="accordion1">Servicio al cliente</button>
+  <div class="panel">
+    <a href="devoluciones.html">Garantias y devoluciones</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <button class="accordion1">Comprar en Velancy</button>
+  <div class="panel">
+    <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+  </div>
+
+  <button class="accordion1">Ayuda</button>
+  <div class="panel">
+    <a href="tallas.html">Guia de tallas</a>
+    <a href="comentarios.html">Reseñas</a>
+    
+  </div>
+
+  <div class="redes-logo">
+    <div class="logo-pq">
+      <a href="index.html"> <img src="img/logo-footer.png"></a>
+    </div>
+    <div class="redes-pq">
+      <h4>Siguenos en</h4>
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+        src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+      /> </a> 
+    <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"> <img
+        src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+      /> </a> 
+    <a href="https://pin.it/2Zpex0u" target="_blank"><img
+        src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+      /></a>  
+    </div>
+  </div>
+  </div>
+</section>
+
+
+  <!-------------------- FIN FOOTER PEQUEÑO ------------------------------->
+
+   <!-------------------- INICIO FOOTER MEDIANO ------------------------------->
+ <section id="footer-mediano">
+  <div class="logo2">
+    <a href="index.html"> <img src="img/logo-footer.png"></a>
+  </div>
+  <div class="subtitulo">Siguenos en</div>
+  <div class="redes">
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+    /></a>
+    <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+    /></a>
+     <a href="https://pin.it/2Zpex0u" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+    /></a>
+  </div>
+<div class="servicio">
+  <h4>Servicio al cliente</h4>
+  <a href="devoluciones.html">Garantias y devoluciones</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+<div class="compras-velancy">
+  <h4>Comprar en Velancy</h4>
+  <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+</div>
+<div class="ayuda">
+  <h4>Ayuda</h4>
+  <a href="tallas.html">Guia de tallas</a>
+  <a href="comentarios.html">Reseñas</a>
+</div>
+</section>
+
+
+<!-------------------- FIN FOOTER MEDIANO ------------------------------->
+    <!-------------------- INICIO FOOTER ------------------------------->
+   <section id="footer">
+      <div class="contenedor-footer">
+      <div class="contenido">
+        <div class="logo2">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="subtitulo">Siguenos en</div>
+        <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /></a> 
+         <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /></a> 
+         <a href="https://pin.it/2Zpex0u" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>
+        </div>
+      </div>
+      <div class="servicio">
+        <h4>Servicio al cliente</h4>
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="compras-velancy">
+        <h4>Comprar en Velancy</h4>
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+      <div class="ayuda">
+        <h4>Ayuda</h4>
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        </div>
+      </div>
+    </section>
+    <!-------------------- FIN FOOTER  ------------------------------->
+  </div>
+  <script src="js/script4.js" defer></script>
+  </body>
+</html>

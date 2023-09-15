@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo-circular.png" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Nosotros</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="css/nosotros.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="js/nosotros.js" defer></script>
+  </head>
+  <body>
+    <!-------------------- INICIO MENU ------------------------------->
+    <div class="contenedor">
+  <!-------------------- INICIO MENU PEQUEÑO ------------------------------->
+
+  <nav class="menu-pq">
+      
+    <div class="logo">
+     <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+    
+</div>
+<span class="menubtn" onclick="openNav()">&#9776; </span>
+
+    <div class="sideNav" id="sidenav" >
+      <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+     <a href="index.html" class="item-menu">INICIO</a>
+        <a href="nosotros.html" class="item-menu">NOSOTROS</a>
+        <a href="catalogo.html" class="item-menu">CATALOGO</a>
+        <a href="sale.html" class="item-menu">SALE</a>
+        <a href="blog.html" class="item-menu">BLOG</a>
+      <a href="#">
+        <div class="icono-carrito">
+          <a href="#" onclick="openWindow()"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+            width="30px"
+            height="30px"
+          /> </a> 
+        
+        </div>
+        <div class="offcanvas offcanvas-end show">
+          <div class="encabezado-carrito">
+            <h2>Mi carrito</h2>
+            <button id="cerrar" type="button" onclick="closeWindow()">&#10006;</button>
+          </div>
+          <div class="contenedor-carrito">
+            <div class="producto-carrito"> Lista de productos 
+              <div id="lista-compras"></div>
+            </div>
+            
+         <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+          </div>
+        </div></a>
+    </div>
+    </nav>
+     
+
+      <!-------------------- FIN MENU PEQUEÑO ------------------------------->
+
+      <!-------------------- FIN MENU PEQUEÑO ------------------------------->
+      <nav id="menu">
+        <div class="contenedor-menu">
+        <div class="logo">
+         <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li>
+            <a href="catalogo.html">CATÁLOGO</a>
+            
+          </li>
+          <li><a href="sale.html">SALE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+       
+        <div class="icono-carrito">
+          <a href="#" onclick="openWindowG()"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+            width="30px"
+            height="30px"
+          /> </a> 
+        
+        </div>
+        <div class="offcanvas offcanvas-end show" id="uno">
+          <div class="encabezado-carrito">
+            <h2>Mi carrito</h2>
+            <button id="cerrar" type="button" onclick="closeWindowG()">&#10006;</button>
+          </div>
+          <div class="contenedor-carrito">
+            <div class="producto-carrito"> Lista de productos 
+              <div id="lista-compras"></div>
+            </div>
+            
+            <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+          </div>
+        </div>
+        </div>
+      
+      </nav>
+    
+    <!-------------------- FIN MENU ------------------------------->
+    
+      <!-------------------- INICIO BANNER ------------------------------->
+
+    <section class="banner">
+      <div class="contenedor-banner"><h2>Nosotros</h2>
+      <p>Conoce nuestra marca  y su
+       crecimiento empresarial</p></div>
+        <button class="boton"></button>
+    </section>
+    
+      <!-------------------- FIN BANNER ------------------------------->
+
+      <!-------------------- INICIO DESCRIPCION ------------------------------->
+
+    <section class="descripcion">
+      <h3>
+      Sobre <span>Velancy</span> 
+      </h3>
+    <article class="descripcion-nosotros">
+      <div> <p>
+        Velancy es una empresa de ropa conformada por una 
+        persona natural con más de 8 años en el mercado, que 
+        promueve la venta y compra de la industria local 
+        brindando productos de diferentes marcas colombianas 
+        para las mujeres. 
+        <span>Nace de la necesidad de su fundadora en trabajar de 
+        manera independiente.</span><span>En un principio se fundó con una 
+        pequeña inversión que ha ido aumentado con el tiempo, 
+        contaba con sede física en Zipaquira pero debido a la 
+        pandemia se movia más la compra online.</span>
+      </p></div>
+      <div><iframe width="853" height="480" src="https://www.youtube.com/embed/Xpy64NBesq4" title="Spot publicitario Velancy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+     
+      
+      </article>
+    
+    </section>
+      <!-------------------- FIN DESCRIPCION  ------------------------------->
+  <!-------------------- INICIO VALORES ------------------------------->
+
+    <section class="clasificacion-valores">
+    <h3>
+   Nuestros <span>valores</span> 
+      </h3>
+    <article class="galeria">
+    
+      <div class="tarjeta">
+        <div class="tarjeta-imagen1"></div>
+        <div class="tarjeta-contenido">
+          <h2 class="titulo">
+            Calidad
+          </h2>
+          <p class="tarjeta-descripcion">Estamos comprometidos con brindar productos de excelente calidad a nuestros clientes con los mejores precios. </p>
+         
+        </div>
+      </div>
+      <div class="tarjeta">
+        <div class="tarjeta-imagen2"></div>
+        <div class="tarjeta-contenido">
+          <h2 class="titulo">
+            Puntualidad
+          </h2>
+          <p class="tarjeta-descripcion">Garantizamos a nuestros clientes puntualidad en la entrega de sus productos para cada una de sus ocasiones.</p>
+    
+        </div>
+
+      </div>
+  
+   
+      <div class="tarjeta">
+        <div class="tarjeta-imagen3"></div>
+        <div class="tarjeta-contenido">
+          <h2 class="titulo">
+           Integridad
+          </h2>
+          <p class="tarjeta-descripcion">Velancy se basa en la integridad de su actuar, es por esto que nuestra comunicación con los clientes esta sujeta en la honestidad. </p>
+         
+        </div>
+      </div>
+      <div class="tarjeta">
+        <div class="tarjeta-imagen4"></div>
+        <div class="tarjeta-contenido">
+          <h2 class="titulo">
+          Respeto
+          </h2>
+          <p class="tarjeta-descripcion">El respeto como pilar fundamental para la buena comunicación entre ambas partes.</p>
+        </div>
+      </div>
+
+    
+      </article>
+      
+    </section>
+
+    
+      <!-------------------- FIN VALORES ------------------------------->
+
+    <!-------------------- INICIO NEWSLETTER ------------------------------->
+    <article>
+    
+      <div class="newsletter">
+        <hr width="20%">
+        <h2>Suscríbete a nuestro newsletter</h2>
+        <p>
+          Recibe información de nuestro lanzamientos, promociones, novedades y eventos
+        </p>
+
+       <input type="email" name="direccionemail" size="10" placeholder="Ej.: usuario@servidor.com">
+        <button>
+          <a href="#" id="boton1">Subscribirse</a>
+        </button>
+      </div>
+    </article>
+<!-------------------- FIN NEWSLETTER ------------------------------->
+  <!-------------------- INICIO FOOTER  PEQUEÑO------------------------------->
+
+ 
+  <section id="footer-pq">
+    <div class="contenedor-footer-pq">
+    <button class="accordion">Servicio al cliente</button>
+    <div class="panel">
+      <a href="devoluciones.html">Garantias y devoluciones</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  
+    <button class="accordion">Comprar en Velancy</button>
+    <div class="panel">
+      <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+    </div>
+  
+    <button class="accordion">Ayuda</button>
+    <div class="panel">
+      <a href="tallas.html">Guia de tallas</a>
+      <a href="comentarios.html">Reseñas</a>
+      
+    </div>
+  
+    <div class="redes-logo">
+      <div class="logo-pq">
+        <a href="index.html"> <img src="img/logo-footer.png"></a>
+      </div>
+      <div class="redes-pq">
+        <h4>Siguenos en</h4>
+      <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /> </a> 
+      <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+        /> </a> 
+      <a href="https://pin.it/2Zpex0u" target="_blank"><img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+        /></a>  
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  
+    <!-------------------- FIN FOOTER PEQUEÑO ------------------------------->
+
+     <!-------------------- INICIO FOOTER MEDIANO ------------------------------->
+ <section id="footer-mediano">
+  <div class="logo2">
+    <a href="index.html"> <img src="img/logo-footer.png"></a>
+  </div>
+  <div class="subtitulo">Siguenos en</div>
+  <div class="redes">
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+    /></a>
+    <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+    /></a>
+     <a href="https://pin.it/2Zpex0u" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+    /></a>
+  </div>
+<div class="servicio">
+  <h4>Servicio al cliente</h4>
+  <a href="devoluciones.html">Garantias y devoluciones</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+<div class="compras-velancy">
+  <h4>Comprar en Velancy</h4>
+  <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+</div>
+<div class="ayuda">
+  <h4>Ayuda</h4>
+  <a href="tallas.html">Guia de tallas</a>
+  <a href="comentarios.html">Reseñas</a>
+</div>
+</section>
+
+
+<!-------------------- FIN FOOTER MEDIANO ------------------------------->
+       <!-------------------- INICIO FOOTER ------------------------------->
+       <section id="footer">
+      <div class="contenedor-footer">
+      <div class="contenido">
+        <div class="logo2">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="subtitulo">Siguenos en</div>
+        <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /></a> 
+         <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /></a> 
+         <a href="https://pin.it/2Zpex0u" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>
+        </div>
+      </div>
+      <div class="servicio">
+        <h4>Servicio al cliente</h4>
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="compras-velancy">
+        <h4>Comprar en Velancy</h4>
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+      <div class="ayuda">
+        <h4>Ayuda</h4>
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        </div>
+      </div>
+    </section>
+    <!-------------------- FIN FOOTER  ------------------------------->
+  </div>
+</div>
+  </body>
+</html>

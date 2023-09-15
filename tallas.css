@@ -1,0 +1,1229 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 14px;
+  background: rgba(0,0,0,0);
+  z-index: 12;
+  overflow: visible;
+}
+::-webkit-scrollbar-thumb {
+width: 10px;
+background-color: #fc0882;
+  border-radius: 10px;
+  z-index: 12;
+  border: 4px solid rgba(0,0,0,0);
+  background-clip: padding-box;
+  transition: background-color .32s ease-in-out;
+  margin: 4px;
+  min-height: 32px;
+  min-width: 32px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+.contenedor {
+   width: 100%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    font-family: "Oswald", sans-serif;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1;
+    font-size: 0.9em;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  
+  .contenedor-menu{
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  .menu > li {
+    float: left;
+  }
+  
+  .menu li a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    font-size: 14px;
+  }
+  
+  .menu li a:hover {
+    background-color: #F93EA5;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+  }
+  
+  .menu li:hover > ul {
+    display: block;
+  }
+  
+  .menu li ul li {
+    position: relative;
+  }
+  
+  .menu li ul li ul {
+    right: -140px;
+    top: 0px;
+  }
+  
+  .icono-carrito img {
+    object-fit: contain;
+  }
+  .logo{
+    width: 20%;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+.offcanvas{
+  position: fixed;
+  z-index: 1045;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  color:black;
+  background-color: white;
+ display: none;
+ box-shadow: 10px 10px 5px 0 #807680;
+  background-clip: padding-box;
+  outline: 0;
+  transition: transform .3s ease-in-out;
+}
+.offcanvas.offcanvas-end {
+  top: 10%;
+  right: 8%;
+  width: var(--bs-offcanvas-width);
+  border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+  transform: translateX(100%);}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  transform: none;
+}
+.offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+  visibility: visible;
+}
+
+.encabezado-carrito{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.encabezado-carrito button{
+  border: none;
+  background: none;
+  padding: 1rem;
+}
+.encabezado-carrito h2{
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 0 1em;
+}
+.producto-carrito{
+  padding-bottom: 1em;
+}
+
+.contenedor-carrito{
+    flex-grow: 1;
+    padding: 1em;
+    overflow-y: auto;
+}
+.boton{
+  background-color: #F93EA5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  
+}
+#cerrar{
+  cursor: pointer;
+}
+
+.icono-carrito img {
+  object-fit: contain;
+}
+  .banner {
+    background-image: url(../img/banner-tallas.png);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: grid;
+    grid-template-columns:2fr 1.2fr 0.5fr  ;
+    grid-template-rows: 2fr 0.5fr 2fr;
+    }
+    .contenedor-banner{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    }
+    .contenedor-banner h2 {
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 5%;
+    }
+  
+    .contenedor-banner p{
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5;
+    }
+    
+    .banner .boton{
+      position: relative;
+  top:65%;
+  left: 50%;
+  background-color: #FF5EB6;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+  grid-column-start:2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  width:50%;
+  height: 35%;
+  border: none;
+  cursor: pointer;
+      
+    }
+  
+  .tallas{
+    width: 100%;
+    background-image: url(../img/fondo-costura.png);
+    background-size: cover;
+  }
+
+  .contenido-tallas{
+    width: 70%;
+    margin: auto;
+    padding-bottom:10%;
+  }
+
+ 
+  .arriba, .abajo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
+    color: white;
+  }
+
+  .arriba div{
+    width: 20%;
+    height: 8vh;
+    text-align: center;
+    background-color: #F93EA5;
+    margin-bottom: 0.5em;
+    padding: 15px 0;
+    margin-top: 1em;
+    
+  }
+
+  .abajo div{
+    width: 20%;
+    height: 8vh;
+    text-align: center;
+    background-color: #F93EA5;
+    padding: 15px 0;
+  }
+
+ .contenido-tallas h4{
+    padding-top: 3em;
+    padding-bottom: 1em;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  .newsletter {
+    width: 100%;
+    align-items: center;
+    padding: 3em 2em;
+    text-align: center;
+  }
+  .newsletter hr{
+    border: #f70e8e 2px solid;
+    margin:2% auto;
+  }
+  .newsletter h2 {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+  }
+  .newsletter p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    margin: 1% 0;
+  }
+  input {
+    width: 25%;
+    margin: 1em;
+    padding: 0.6rem 5rem;
+    border: 1px solid black;
+  }
+  
+  .newsletter button {
+    background: none;
+    padding: 0.4rem 1.2rem;
+    margin-left: 1rem;
+   background-color:  #f70e8e;
+   border:#f70e8e 1px solid;
+  }
+  .newsletter a {
+    text-decoration: none;
+   color: white;
+    font-size: 1em;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+  }
+  
+
+  #footer{
+ width: 100%;
+background-color:#D9D9D9;
+} 
+
+.contenido{
+  width: 15%;
+}
+.contenedor-footer {
+  width: 90%;
+  margin: auto;
+  color: black;
+  display: flex;
+  padding: 3rem 0;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+}
+
+ .servicio, .compras-velancy, .ayuda{
+  width: 15%;
+  text-align: left;
+}
+#footer a {
+  line-height: 3.5;
+  text-decoration: none;
+  color: black;
+  display: flex;
+ 
+}
+.subtitulo {
+  text-align: center;
+  margin: 4% 0;
+  font-family: "Oswald", sans-serif;
+  
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  margin: auto;
+  width: 100%;
+}
+.redes img {
+  margin-top: 1rem;
+  width: 70%;
+}
+
+.logo2 img {
+  width:70%;
+  height:70%;
+  display: flex;
+  margin: auto;
+}
+  /* -------------------------------------------------RESPONSIVE -------------------------------------------*/
+
+  @media screen and (max-width:500px){
+  .menu-pq {
+	  display: flex;
+	}
+	nav {
+	  display: none;
+	}
+	#footer-mediano{
+	  display: none;
+	}
+   
+	.menu-pq{
+	  width:100%;
+	  height:70px;
+	  display:flex;
+	  justify-content:space-between;
+	  padding:35px 5%;
+	  box-shadow: 0 4px 2px -2px gray;
+	}  
+	
+	.menubtn{
+	  font-size:25px;
+	}
+	
+	.menu-pq .logo{
+	  width:25% }
+  
+	.sideNav{
+	  height:100%;
+	  position:fixed;
+	  top:0;
+	  right:0%;
+	  background-color:white;
+	  overflow-x:hidden;
+	  width:0%;
+	  padding-top:60px;
+	  z-index:1;
+	  transition:0.3s ease-in;
+	}
+	.sideNav a {
+	  padding: 8px 8px 8px 40px;
+	  display:block;
+	  font-size:0.8em;
+	  color:black;
+	  text-decoration:none;
+	}
+   
+  
+	.sideNav .clodeBtn{
+	  position:absolute;
+	  top:25px;
+	  font-size:0.8em;
+	  margin-left:50px;
+	}
+	.offcanvas.offcanvas-end {
+	  top: 50%;
+	  right: 25%;
+	  box-shadow: 6px 0 28px -2px ;
+	  transform: translateX(100%);
+	  box-shadow: 10px 10px 5px 0 #807680;}
+
+	  .banner {
+		height:350px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position:-80% 0%;
+
+	  }
+	  
+	  .banner h2{
+		font-size:1.5em;
+	  }
+	  
+	  .banner p{
+		font-size: 0.7em;
+	  }
+    .contenido-tallas{
+      width: 80%;
+    }
+
+    .contenido-tallas h4{
+    font-size: 1.5em;
+    padding-top: 1em;
+    }
+
+    .arriba, .abajo{
+      font-size: 0.7em;
+    }
+    .arriba div, .abajo div{
+      height: 40px;
+    }
+
+    .newsletter{
+      width: 100%;
+      margin: auto;
+      }
+      
+      .newsletter button {
+      padding: 0.6rem 1.2rem;
+      }
+      .newsletter p{
+      font-size: 0.7em;
+      }
+      
+      .newsletter a{
+      font-size: 0.9em;
+      }
+      
+      .newsletter hr{
+      width: 50%;
+      }
+      input{
+      width: 40%;
+      height: 35px;
+      padding:1% ;
+      }
+    
+      #footer{
+        display: none;
+        }
+        #footer-pq {
+        background-color: #D9D9D9;
+        font-size: 0.7em;
+        }
+        
+        .contenedor-footer-pq{
+        padding: 10px 0;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+         
+        }
+        .accordion {
+        display: flex;
+        margin: auto;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 0.8em;
+        cursor: pointer;
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.4s;
+        background: none;
+        text-decoration: none;
+        }
+        
+        #footer-pq .panel {
+        background-color:#D9D9D9;
+        display: none;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size:0.8em;
+        padding: 0;
+        }
+        #footer-pq .panel a {
+        line-height: 2;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        color: black;
+        display: block;
+        }
+        .accordion:after {
+        content: url("https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%203.png?v=1686703348739");
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        }
+        
+        .active:after {
+        content: "\2796";
+        }
+        
+        .redes-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2em;
+        }
+        .redes-pq {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .redes-pq h4 {
+        font-size: 0.8em;
+        font-family: "Oswald", sans-serif;
+        }
+        .logo-pq,
+        .redes-pq {
+        width: 40%;
+        }
+        .logo-pq img {
+        width: 50%;
+        }
+        .redes-pq img {
+        width: 15%;
+        }
+  }
+
+
+  @media  (min-width:501px) and (max-width:576px){
+    .menu-pq {
+      display: flex;
+    }
+    nav {
+      display: none;
+    }
+    #footer-mediano{
+      display: none;
+    }
+     
+    .menu-pq{
+      width:100%;
+      height:70px;
+      display:flex;
+      justify-content:space-between;
+      padding:35px 5%;
+      box-shadow: 0 4px 2px -2px gray;
+    }  
+    
+    .menubtn{
+      font-size:25px;
+    }
+    
+    .menu-pq .logo{
+      width:25% }
+    
+   .sideNav{
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0%;
+    background-color:white;
+    overflow-x:hidden;
+    width:0%;
+    padding-top:60px;
+    z-index:1;
+    transition:0.3s ease-in;
+  }
+  .sideNav .item-menu {
+    padding: 8px 8px 8px 40px;
+    display:block;
+    font-size:0.8em;
+    color:black;
+    text-decoration:none;
+  }
+
+  .boton{
+    padding: 8px 16px;
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5%;
+    background-color: #F93EA5;
+    color: white;
+    border: none;
+    font-size:1em;
+  }
+
+  .icono-carrito{
+    padding: 8px 8px 8px 40px;
+  }
+ 
+ 
+
+  .sideNav .clodeBtn{
+    position:absolute;
+    top:25px;
+    font-size:0.8em;
+    text-decoration: none;
+    margin-left:139px;
+    color: black;
+  }
+  .offcanvas.offcanvas-end {
+    top: 28%;
+    right: 25%;
+    box-shadow: 6px 0 28px -2px ;
+    transform: translateX(100%);
+    box-shadow: 10px 10px 5px 0 #807680;}
+  
+      .banner {
+      height:350px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:-25% 0%;
+  
+      }
+      
+      .banner h2{
+      font-size:2em;
+      margin-left: 8%;
+      }
+      
+      .banner p{
+      font-size: 0.8em;
+      margin-left: 8%;
+      }
+      .banner .boton{
+        top: 55%;
+      }
+      .contenido-tallas{
+        width: 80%;
+      }
+  
+      .contenido-tallas h4{
+      font-size:1.8em;
+      padding-top: 1em;
+      }
+  
+      .arriba, .abajo{
+        font-size: 0.8em;
+      }
+      .arriba div, .abajo div{
+        height: 45px;
+      }
+  
+      .newsletter{
+        width: 90%;
+        margin: auto;
+      }
+      .newsletter h2 {
+        font-size: 1.7em;
+      }
+      
+      .newsletter button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9em;
+}
+      .newsletter p{
+        font-size: 0.8em;
+      }
+        
+      .newsletter hr{
+        width: 50%;
+      }
+      input{
+        width: 40%;
+        height: 46px;
+        padding:1% ;
+      }
+        #footer{
+          display: none;
+          }
+          #footer-pq {
+          background-color: #D9D9D9;
+        
+          }
+          
+          .contenedor-footer-pq{
+          padding: 10px 0;
+          width: 70%;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+           
+          }
+          .accordion {
+          display: flex;
+          margin: auto;
+          font-family: "Roboto", sans-serif;
+          font-weight: bold;
+          color: black;
+          font-size: 0.8em;
+          cursor: pointer;
+          padding: 10px 0;
+          width: 100%;
+          text-align: left;
+          border: none;
+          border-bottom: 1px solid black;
+          outline: none;
+          align-items: center;
+          justify-content: space-between;
+          transition: 0.4s;
+          background: none;
+          text-decoration: none;
+          }
+          
+          #footer-pq .panel {
+          background-color:#D9D9D9;
+          display: none;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          font-family: "Roboto", sans-serif;
+          font-weight: normal;
+              font-size: 0.8em;
+      
+          padding: 0;
+          }
+          #footer-pq .panel a {
+          line-height: 2;
+          text-decoration: none;
+          font-family: "Roboto", sans-serif;
+          color: black;
+          display: block;
+          }
+          .accordion:after {
+          content: url("https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%203.png?v=1686703348739");
+          font-size: 13px;
+          color: #777;
+          float: right;
+          margin-left: 5px;
+          }
+          
+          .active:after {
+          content: "\2796";
+          }
+          
+          .redes-logo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 2em;
+          }
+          .redes-pq {
+            display: flex;
+            align-items: center;
+            }
+            .redes-pq h4 {
+            font-size: 0.8em;
+            font-family: "Oswald", sans-serif;
+            width: 50%;
+            }
+            .logo-pq,
+            .redes-pq {
+            width: 40%;
+            }
+            .logo-pq img {
+            width: 50%;
+            }
+            .redes-pq img {
+            width: 70%;
+            }
+            .redes-pq a{
+            display: flex;
+            justify-content: end;
+            }
+  }
+
+  @media  (min-width:577px) and (max-width:990px){
+
+    .menu-pq {
+      display: flex;
+    }
+    nav {
+      display: none;
+    }
+    #footer-mediano{
+      display: none;
+    }
+     
+    .menu-pq{
+      width:100%;
+      height:70px;
+      display:flex;
+      justify-content:space-between;
+      padding:35px 5%;
+      box-shadow: 0 4px 2px -2px gray;
+    }  
+    
+    .menubtn{
+      font-size:25px;
+    }
+    
+    .menu-pq .logo{
+      width:25% }
+    
+    .sideNav{
+      height:100%;
+      position:fixed;
+      top:0;
+      right:0%;
+      background-color:white;
+      overflow-x:hidden;
+      width:0%;
+      padding-top:60px;
+      z-index:1;
+      transition:0.3s ease-in;
+    }
+    .sideNav a {
+      padding: 8px 8px 8px 40px;
+      display:block;
+      font-size:0.8em;
+      color:black;
+      text-decoration:none;
+    }
+     
+    
+    .sideNav .clodeBtn{
+      position:absolute;
+      top:25px;
+      font-size:0.8em;
+      margin-left:50px;
+    }
+    .offcanvas.offcanvas-end {
+      top: 50%;
+      right: 25%;
+      box-shadow: 6px 0 28px -2px ;
+      transform: translateX(100%);
+      box-shadow: 10px 10px 5px 0 #807680;}
+  
+      .banner {
+      height:450px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:left;
+  
+      }
+      
+      .banner h2{
+      font-size:2.1em;
+      margin-left: 8%;
+      }
+      
+      .banner p{
+      font-size: 0.9em;
+      margin-left: 8%;
+      }
+.contenido-tallas{
+  width: 70%;
+}
+.contenido-tallas h4{
+  font-size: 2.1em;
+}
+
+.arriba div, .abajo div{
+  height: 45px;
+  font-size: 0.9em;
+}
+
+.newsletter h2{
+font-size: 2.1em;
+}
+
+.newsletter p{
+  font-size: 0.9em;
+}
+
+
+#footer{
+  display: none;
+  }
+  #footer-pq {
+  background-color: #D9D9D9;
+  font-size: 0.9em;
+  }
+  
+  .contenedor-footer-pq{
+  padding: 10px 0;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+   
+  }
+  .accordion {
+  display: flex;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+  background: none;
+  text-decoration: none;
+  }
+  
+  #footer-pq .panel {
+  background-color:#D9D9D9;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size:0.8em;
+  padding: 0;
+  }
+  #footer-pq .panel a {
+  line-height: 2;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  display: block;
+  }
+  .accordion:after {
+  content: url("https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%203.png?v=1686703348739");
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  }
+  
+  .active:after {
+  content: "\2796";
+  }
+  
+  .redes-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  }
+  .redes-pq {
+    display: flex;
+    align-items: center;
+    }
+    .redes-pq h4 {
+    font-size: 0.8em;
+    font-family: "Oswald", sans-serif;
+    width: 50%;
+    }
+    .logo-pq,
+    .redes-pq {
+    width: 40%;
+    }
+    .logo-pq img {
+    width: 50%;
+    }
+    .redes-pq img {
+    width: 70%;
+    }
+    .redes-pq a{
+    display: flex;
+    justify-content: end;
+    }
+}
+
+@media  (min-width:991px) and (max-width:1100px){
+  .menu li a{
+    font-size: 0.9em;
+  }
+
+  .menu-pq{
+    display: none;
+  }
+
+  .banner{
+    background-position: -20% 0;
+    height:500px;
+  }
+  .banner h2{
+    font-size: 2.5em;
+  }
+
+  .banner p{
+    font-size: 1.1em;
+  }
+
+  .contenido-tallas h4{
+    font-size: 2.1em;
+  }
+
+  .arriba div, .abajo div{
+    height: 50px;
+    font-size: 1.1em;
+  }
+  
+ .newsletter hr{
+  width: 30%;
+}
+.newsletter button{
+  padding: 0.8rem 1.2rem;
+}
+.newsletter a {
+  font-size: 1.1em;
+}
+input{
+  width: 30%;
+  height: 50px;
+  padding:1% ;
+}
+  #footer-pq, #footer{
+    display: none;
+  }
+
+  #footer-mediano{
+    display: flex;
+    font-size: 1em;
+  }
+  
+  #footer-mediano{
+    width: 100%;
+  background-color:#D9D9D9;
+  color: black;
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  }
+  
+  #footer-mediano .servicio,#footer-mediano .compras-velancy,#footer-mediano .ayuda{
+    width: 30%;
+    align-items: top;
+    padding: 0 0 0 5em;
+    order: 1;
+  }
+  
+  #footer-mediano a {
+    line-height: 3.5;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    display: flex;
+
+  }
+  .redes a{
+     display: flex;
+    justify-content:center;
+}
+  #footer-mediano .redes {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em auto;
+    width: 15%;
+    order: 3;
+  }
+  #footer-mediano .subtitulo{
+    display: none;
+  }
+  #footer-mediano .logo2{
+  
+  order: 1;
+  display: block;
+  margin: 2em auto;
+  width: 90%;
+  }
+  
+  #footer-mediano .logo2 img{
+  width: 15%;
+  }
+}
+  
+
+
+@media  (min-width:1101px) and (max-width:1400px){
+  .menu-pq, #footer-mediano, #footer-pq{
+    display: none;
+  }
+
+  .banner{
+    height: 742px;
+  }
+
+  .banner h2{
+    font-size: 2.5em; 
+  margin-left: 15%; }
+
+  .banner p{
+    font-size: 1.1em; 
+  margin-left: 15%; }
+
+  .contenido-tallas h4{
+    font-size: 2.5em;
+    padding-top: 2em;
+  }
+  .arriba div, .abajo div{
+    height: 70px;
+    font-size: 1.1em;
+  }
+  .newsletter h2{
+    font-size: 2em;
+  }
+  .newsletter p{
+    font-size: 1.1em;
+  }
+ 
+ 
+}
+
+
+@media screen and  (min-width:1401px){
+
+  .contenedor{
+    margin: auto;
+    max-width: 1400px;
+  }
+  .menu-pq, #footer-mediano, #footer-pq{
+    display: none;
+  }
+
+  .banner{
+    height: 742px;
+  }
+  .banner h2{
+    font-size: 3em;
+    margin-left: 25%;
+  }
+  .banner p{
+margin-left: 25%;
+  }
+
+  
+
+  .contenido-tallas h4{
+    font-size: 2.5em;
+
+    padding:1em 0;
+  }
+
+  
+  .newsletter h2{
+    font-size: 2.2em;
+  }
+
+    input{
+  height: 48px;
+}
+ .newsletter button{
+  padding: 0.6rem 1.2rem;
+}
+.newsletter a {
+    font-size: 1.3em;
+}
+
+ .offcanvas.offcanvas-end {
+    top: 10%;
+    right:18%;
+    width: var(--bs-offcanvas-width);
+    border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(100%);
+}
+}

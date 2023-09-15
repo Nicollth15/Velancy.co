@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo-circular.png" />
+
+    
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body>
+    <!-------------------- INICIO MENU ------------------------------->
+   
+      
+   
+      <!-------------------- INICIO MENU PEQUEÑO ------------------------------->
+
+      <div class="contenedor">
+<nav class="menu-pq">
+      
+      <div class="logo">
+       <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+      
+  </div>
+  <span class="menubtn" onclick="openNav()">&#9776; </span>
+
+      <div class="sideNav" id="sidenav" >
+        <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+        <a href="index.html" class="item-menu">INICIO</a>
+        <a href="nosotros.html" class="item-menu">NOSOTROS</a>
+        <a href="catalogo.html" class="item-menu">CATALOGO</a>
+        <a href="sale.html" class="item-menu">SALE</a>
+        <a href="blog.html" class="item-menu">BLOG</a>
+        <a href="#">
+          <div class="icono-carrito">
+            <a href="#" onclick="openWindow()"> <img
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+              width="30px"
+              height="30px"
+            /> </a> 
+          
+          </div>
+          <div class="offcanvas offcanvas-end show">
+            <div class="encabezado-carrito">
+              <h2>Mi carrito</h2>
+              <button id="cerrar" type="button" onclick="closeWindow()">&#10006;</button>
+            </div>
+            <div class="contenedor-carrito" id="contenedor-compra">
+              <div class="producto-carrito"> Lista de productos 
+                <div class="lista-compras"></div>
+              </div>
+              
+              <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+            </div>
+          </div></a>
+      </div>
+      </nav>
+
+      <!-------------------- FIN MENU PEQUEÑO ------------------------------->
+      <nav id="menu">
+        <div class="contenedor-menu">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo-version-grande.png"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li>
+            <a href="catalogo.html">CATÁLOGO</a>
+            
+          </li>
+          <li><a href="sale.html">SALE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+       
+        <div class="icono-carrito">
+          <a href="#" onclick="openWindowG()"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+            width="30px"
+            height="30px"
+          /> </a> 
+        
+        </div>
+        <div class="offcanvas offcanvas-end show" id="uno">
+          <div class="encabezado-carrito">
+            <h2>Mi carrito</h2>
+            <button id="cerrar" type="button" onclick="closeWindowG()">&#10006;</button>
+          </div>
+          <div class="contenedor-carrito">
+            <div class="producto-carrito"> Lista de productos 
+              <div id="lista-compras" ></div>
+            </div>
+            
+            <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+        </div>
+        </div>
+      
+      </nav>
+
+   
+      <div id="ir_arriba_boton" class="ocultar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+    </div>
+ 
+ 
+ 
+    <!-------------------- FIN MENU ------------------------------->
+
+    <!-------------------- INICIO BANNER ------------------------------->
+    <section class="ContainerCenter">
+      <!-- Radio Seleccionar --->
+      <input
+        class="inputslide"
+        type="radio"
+        name="Carrusel"
+        id="Slider1"
+        checked
+      />
+      <input class="inputslide" type="radio" name="Carrusel" id="Slider2" />
+      <input class="inputslide" type="radio" name="Carrusel" id="Slider3" />
+
+      <div class="Carrusels">
+        <!-- Imagen contenido--->
+        <div class="Carrusel"> 
+          
+
+    
+         <div class="dos"><h2>Nueva <span>Colección</span></h2>
+          <p>¡Conoce nuestra nueva coleccion de
+            invierno para este mes de septiembre!</p></div> 
+           <button role="link" onclick="window.location='catalogo.html'" class="boton">Comprar Ahora </button>
+      </div>
+      <div class="Carrusel"> 
+        <div class="dos"><h2>¡Super <span>Sale!</span></h2>
+         <p>¡Visita nuestra sección de sale y conoce nuestras ofertas!</p></div> 
+          <button role="link" onclick="window.location='sale.html'" class="boton">Comprar Ahora </button>
+     </div>
+     <div class="Carrusel"> 
+      <div class="dos"><h2>Temporada de <span> amor y amistad</span></h2>
+       <p>¡Compra ya tus regalos de amor y amistad!</p></div> 
+         <button role="link" onclick="window.location='catalogo.html'" class="boton">Comprar Ahora </button>
+   </div>
+
+        <!-- Flechas a la izquierda por cada imagen--->
+        <label for="Slider3" class="ArrowLeft Arrow1"
+          ><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/circulo-de-flecha%204.png?v=1685564709571" 
+        /></label>
+        <label for="Slider1" class="ArrowLeft Arrow2"
+          ><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/circulo-de-flecha%204.png?v=1685564709571"
+        /></label>
+        <label for="Slider2" class="ArrowLeft Arrow3"
+          ><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/circulo-de-flecha%204.png?v=1685564709571"
+        /></label>
+
+        <!-- Flechas a la derecha por cada imagen--->
+        <label for="Slider2" class="ArrowRight Arrow1"
+          ><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/circulo-de-flecha%205.png?v=1685565225581"
+        /></label>
+        <label for="Slider3" class="ArrowRight Arrow2"
+          ><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/circulo-de-flecha%205.png?v=1685565225581"
+        /></label>
+        <label for="Slider1" class="ArrowRight Arrow3"
+          ><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/circulo-de-flecha%205.png?v=1685565225581"
+        /></label>
+      </div>
+
+      <!-- Selector circulos inferiores colgantes--->
+      <div class="Selectors">
+        <label for="Slider1" class="Selector"></label>
+        <label for="Slider2" class="Selector"></label>
+        <label for="Slider3" class="Selector"></label>
+      </div>
+    </section>
+
+  
+    <!-------------------- FIN BANNER ------------------------------->
+
+     <!-------------------- INICIO SLIDE MARCAS ------------------------------->
+     <section id="slide_marcas">
+      <h2>Tus <span>marcas favoritas</span> en un solo lugar</h2>
+      <div class="slide_items">
+          <img
+            class="slide-item"
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2057.png?v=1686002384263"
+            width="15%"
+            height="15%"
+          />
+          <img
+            class="slide-item"
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2058.png?v=1686002409582"
+            width="15%"
+            height="15%"
+          />
+          <img
+            class="slide-item"
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/image%205.png?v=1686002263198"
+            width="15%"
+            height="15%"
+          />
+
+          <img
+            class="slide-item"
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/lola.png?v=1692145837096"
+            width="15%"
+            height="15%"
+          />
+          <img
+            class="slide-item"
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2060.png?v=1686002464171"
+            width="15%"
+            height="15%"
+          />
+        </div>
+        
+      
+    </section>
+    <!-------------------- FIN SLIDE MARCAS ------------------------------->
+
+    <!-------------------- INICIO CATEGORIAS ------------------------------->
+    <section id="categorias">
+      <div><a href="catalogo.html"><img src="img/chaquetas-fondo.png"></a></div>
+      <div><a href="catalogo.html" ><img src="img/fondo-pantalones.png"></a></div>
+      <div><a href="catalogo.html"><img src="img/vestidos-fondo.png"></a></div>
+      <div><a href="catalogo.html"><img src="img/fondo-sacos.png"></a></div>
+      <div><a href="catalogo.html"><img src="img/abrigo-fondo.png"></a></div>
+      <div><a href="catalogo.html"><img src="img/blusas-fondo.png"></a></div>
+
+      <!-------------------- FIN CATEGORIAS ------------------------------->
+    </section>
+
+   
+
+    <!-------------------- INICIO SLIDE PRODUCTOS ------------------------------->
+    <section id="slide_productos">
+      <h2>Productos <span>destacados</span> de la semana</h2>
+      <div class="slide_products">
+        <div class="productos">
+          
+          <div class="slide-1">
+            
+            <div class="slide-product1" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Saco negro cuello v ($30.000)')"><img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+
+            </div>
+            <p>Saco negro cuello v</p>
+            <span>$30.000</span>
+          </div>
+          <div class="slide-2">
+            <div class="slide-product2" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Crop top negro con encaje ($35.000)')"> <img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+            </div>
+            <p>Crop top negro con encaje</p>
+            <span>$35.000</span>
+          </div>
+          <div class="slide-3">
+            <div class="slide-product3" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Skinny Jean oscuro ($80.000)')">  <img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+            </div>
+            <p>Skinny Jean oscuro</p>
+            <span>$80.000</span>
+          </div>
+
+          <div class="slide-4">
+            <div class="slide-product4" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Chaqueta de cuero ($150.000)')">
+              <img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+            </div>
+            <p>Chaqueta de cuero</p>
+            <span>$150.000</span>
+          </div>
+        </div>
+
+        <div class="productos">
+          <div class="slide-5">
+            <div class="slide-product5" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Mom Jean claro ($90.000)')">
+              <img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+            </div>
+            <p>Mom Jean claro</p>
+            <span>$90.000</span>
+          </div>
+          <div class="slide-6">
+            <div class="slide-product6" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Blusa blanca M/L encaje ($30.000)')">
+              <img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+            </div>
+            <p>Blusa blanca M/L encaje</p>
+            <span>$30.000</span>
+          </div>
+          <div class="slide-7">
+            <div class="slide-product7" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Camisa Elegante ($35.000)')"><img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+            </div>
+            <p>Camisa Elegante</p>
+            <span>$35.000</span>
+          </div>
+
+          <div class="slide-8">
+            <div class="slide-product8" onclick="window.location='producto.html'">
+              <a href="#" onclick="add('Short corto rotos($50.000)')"><img
+                class="compra"
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"
+              /></a>
+            </div>
+            <p>Short corto rotos</p>
+            <span>$50.000</span>
+          </div>
+        </div>
+        <button onclick="plusSlides(-1)" class="btn-izq2">
+          <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%202.png?v=1686004640681"
+          />
+        </button>
+        <button onclick="plusSlides(1)" class="btn-der2">
+          <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/flecha-correcta%20(1)%201.png?v=1686004839477"
+          />
+        </button>
+      </div>
+    </section>
+    <!------------------ FIN SLIDE PRODUCTOS ------------------------------->
+
+    <!-------------------- INICIO NEWSLETTER ------------------------------->
+    <article>
+    
+      <div class="newsletter">
+        <hr width="20%">
+        <h2>Suscríbete a nuestro newsletter</h2>
+        <p>
+          Recibe información de nuestro lanzamientos, promociones, novedades y eventos
+        </p>
+
+       <input type="email" name="direccionemail" size="10" placeholder="Ej.: usuario@servidor.com" >
+        <button type="submit" value="Enviar">
+          <a href="#" id="boton1" >Subscribirse</a>
+        </button>
+      </div>
+    </article>
+  
+    <!-------------------- FIN NEWSLETTER ------------------------------->
+   <!-------------------- INICIO FOOTER  PEQUEÑO------------------------------->
+   <section id="footer-pq">
+    <div class="contenedor-footer-pq">
+    <button class="accordion">Servicio al cliente</button>
+    <div class="panel">
+      <a href="devoluciones.html">Garantias y devoluciones</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  
+    <button class="accordion">Comprar en Velancy</button>
+    <div class="panel">
+      <a href="compras.html#compras-titulo">Compras</a>
+      <a href="compras.html#envios-titulo">Envios</a>
+    </div>
+  
+    <button class="accordion">Ayuda</button>
+    <div class="panel">
+      <a href="tallas.html">Guia de tallas</a>
+      <a href="comentarios.html">Reseñas</a>
+      
+    </div>
+  
+    <div class="redes-logo">
+      <div class="logo-pq">
+       <a href="index.html"> <img src="img/logo-footer.png"></a>
+      </div>
+      <div class="redes-pq">
+        <h4>Siguenos en</h4>
+      <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /> </a> 
+      <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+        /> </a> 
+      <a href="https://pin.it/2Zpex0u" target="_blank"><img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+        /></a>  
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  
+    
+    <!-------------------- FIN FOOTER PEQUEÑO ------------------------------->
+
+    <!-------------------- INICIO FOOTER MEDIANO ------------------------------->
+ <section id="footer-mediano">
+  <div class="logo2">
+    <a href="index.html"> <img src="img/logo-footer.png"></a>
+  </div>
+  <div class="subtitulo">Siguenos en</div>
+  <div class="redes">
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+    /></a>
+    <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+    /></a>
+     <a href="https://pin.it/2Zpex0u" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+    /></a>
+  </div>
+<div class="servicio">
+  <h4>Servicio al cliente</h4>
+  <a href="devoluciones.html">Garantias y devoluciones</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+<div class="compras-velancy">
+  <h4>Comprar en Velancy</h4>
+  <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+</div>
+<div class="ayuda">
+  <h4>Ayuda</h4>
+  <a href="tallas.html">Guia de tallas</a>
+  <a href="comentarios.html">Reseñas</a>
+</div>
+</section>
+
+
+<!-------------------- FIN FOOTER MEDIANO ------------------------------->
+    <!-------------------- INICIO FOOTER ------------------------------->
+    <section id="footer">
+      <div class="contenedor-footer">
+      <div class="contenido">
+        <div class="logo2">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="subtitulo">Siguenos en</div>
+        <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /></a> 
+         <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /></a> 
+         <a href="https://pin.it/2Zpex0u" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>
+        </div>
+      </div>
+      <div class="servicio">
+        <h4>Servicio al cliente</h4>
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="compras-velancy">
+        <h4>Comprar en Velancy</h4>
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+      <div class="ayuda">
+        <h4>Ayuda</h4>
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        </div>
+      </div>
+    </section>
+    <!-------------------- FIN FOOTER  ------------------------------->
+       </div>
+      </div>
+    </div>
+       <script src="js/index.js" defer></script>
+      
+  
+  </body>
+</html>

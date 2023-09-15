@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo-circular.png" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Blog</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="css/blog.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="js/blog.js" defer></script>
+  </head>
+  <body>
+      <!-------------------- INICIO MENU ------------------------------->
+      <div class="contenedor">
+
+
+        <nav class="menu-pq">
+      
+          <div class="logo">
+         <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+          
+        </div>
+        
+        
+         <span class="menubtn" onclick="openNav()">&#9776; </span>
+        
+          <div class="sideNav" id="sidenav" >
+           <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+           <a href="index.html" class="item-menu">INICIO</a>
+        <a href="nosotros.html" class="item-menu">NOSOTROS</a>
+        <a href="catalogo.html" class="item-menu">CATALOGO</a>
+        <a href="sale.html" class="item-menu">SALE</a>
+        <a href="blog.html" class="item-menu">BLOG</a>
+            <div class="icono-carrito">
+              <a href="#" onclick="openWindow()"> <img
+                src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+                width="30px"
+                height="30px"
+              /> </a> 
+            
+            </div>
+            <div class="offcanvas offcanvas-end show">
+              <div class="encabezado-carrito">
+                <h2>Mi carrito</h2>
+                <button id="cerrar" type="button"  onclick="closeWindow()">&#10006;</button>
+              </div>
+              <div class="contenedor-carrito">
+                <div class="producto-carrito"> Lista de productos 
+                  <div class="lista-compras"></div>
+                </div>
+                
+                <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+              </div>
+            </div>
+          </div>
+          </nav>
+          
+        
+          <!-------------------- FIN MENU PEQUEÑO ------------------------------->
+      <nav id="menu">
+        <div class="contenedor-menu">
+        <div class="logo">
+         <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li>
+            <a href="catalogo.html">CATÁLOGO</a>
+            
+          </li>
+          <li><a href="sale.html">SALE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+       
+        <div class="icono-carrito">
+          <a href="#" onclick="openWindowG()"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+            width="30px"
+            height="30px"
+          /> </a> 
+        
+        </div>
+        <div class="offcanvas offcanvas-end show" id="uno">
+          <div class="encabezado-carrito">
+            <h2>Mi carrito</h2>
+            <button id="cerrar" type="button" onclick="closeWindowG()">&#10006;</button>
+          </div>
+          <div class="contenedor-carrito">
+            <div class="producto-carrito"> Lista de productos 
+              <div id="lista-compras"></div>
+            </div>
+            
+            <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+          </div>
+        </div>
+         
+          
+          </div>
+       
+          </nav>
+    <!-------------------- FIN MENU ------------------------------->
+  
+<!-------------------- FIN MENU ------------------------------->
+   <!-------------------- INICIO BANNER ------------------------------->
+   <div id="ir_arriba_boton" class="ocultar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+    </svg>
+</div>
+
+    <section class="banner">
+      <div class="contenedor-banner"><h2>Blog</h2>
+        <p>¡Con nuestro blog podras conocer  
+          las ultimas tendencias en moda!</p></div>
+          <button class="boton"></button>
+    </section>
+       <!-------------------- FIN BANNER ------------------------------->
+    
+    <section class="blog">
+    
+    <article class="blog-articulo">
+      <div class="image">
+        <img  class="imagen1"  src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/articulo1.png?v=1686239268811">
+      </div>
+  <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">Vestidos florales</a>
+      <p>
+      Los vestidos florales, le dan un estilo más femenino  ...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>Hace 2 horas</p>
+      <span>1 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+      
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image" id="order-2">
+        <img class="imagen2" src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/2.png?v=1686769974137">
+      </div>
+      <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy </a> <br>
+      <a href="articulo.html" class="titlo-articulo">Colores nude en ropa</a>
+      <p>
+        Existen ciertas ocasiones en las que un outfit...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>2 de agosto</p>
+      <span>4 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+      </div>
+      </article>
+      
+    <article class="blog-articulo">
+      <div class="image">
+        <img class="imagen4" src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/3.png?v=1686770187857">
+      </div>
+      <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">La importancia de combinar</a>
+      <p>
+      La ropa se usa como medio de representación<span>de la personalidad y estilo de la persona</span>...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>5 de diciembre</p>
+      <span>15 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+      </div>
+      </article>
+      
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image" id="order-2">
+        <img class="imagen4" src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/woman-2233820_1280%201.png?v=1686770286090">
+      </div>
+    <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">Estampados en ropa</a>
+      <p>
+        La nueva tendencia en estampados ha tenido...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>15 de junio</p>
+      <span>10 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+      
+      <article class="blog-articulo"  id="blog-articulo-3">
+      <div class="image">
+        <img  class="imagen4"  src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/segundo-articulo.png?v=1686659718727">
+      </div>
+    <div  class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">Jeans blancos ¿Cómo cuidarlos?</a>
+      <p>
+        Pasa que siempre que nos ponemos un jean...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>24 de mayo</p>
+      <span>5 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+
+    <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image"  id="order-2">
+        <img class="imagen4"  src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/image%2022.png?v=1686770430527">
+      </div>
+  <div  class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">¿Como usar chaquetas delgadas?</a>
+      <p>
+      Estas chaquetas son de gran utilidad cuando...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>5 de enero</p>
+      <span>20 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+      
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image">
+        <img class="imagen4" src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/sombrero-caliente-temporada-vacaciones-al-aire-libre_1157-2482%201.png?v=1686770474422">
+      </div>
+  <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">Invierno:Chaqueta</a>
+      <p>
+        Al momento de viajar a un lugar frio es<span>de gran importancia mantenerse abrigado con estilo </span>  ...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>5 de marzo</p>
+      <span>15 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+        
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image" id="order-2">
+        <img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/retrato-moda-estilo-vida-elegante-mujer-rubia-bonita-posando-calle-cerca-moderno-centro-negocios-accesorios-bolso-glamour-floral-vestido-colores-suaves_291049-677%201.png?v=1686770508687">
+      </div>
+    <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">Vestidos elegantes</a>
+      <p>
+        Aprende a escoger tu mejor estilo para tu evento <span> especial de la mano de una guia</span>...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>4 de febrero</p>
+      <span>10 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+      
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image">
+        <img class="imagen4"  src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/tercer-articulo.png?v=1686660289043">
+      </div>
+  <div>
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">Vestidos pegados</a>
+      <p>
+       Los vestidos pegados se pueden combinar de multiples maneras ya sea de manera casual o elegante...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>24 de abril</p>
+      <span>30 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+      
+      
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image" id="order-2">
+        <img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/imagen.png?v=1686770672073">
+      </div>
+  <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">El estilo urbano</a>
+      <p>
+        Cada vez más se unen a esta moda cientos de jóvenes <span>ya que en los ultimos tiempos ha tenido un auge lo overside</span>...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>Hace dos dias</p>
+      <span>30 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+      
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image">
+        <img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/colorful-sweater-7974555_1280%201.png?v=1686770713038">
+      </div>
+  <div class="contenido-pq">
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">Tendencia en cuadros</a>
+      <p>
+        Los cuadros en la moda han  generado nuevos estilos de combinación...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>30 de julio</p>
+      <span>50 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+      
+      <article class="blog-articulo" id="blog-articulo-3">
+      <div class="image" id="order-2" >
+        <img class="imagen4" src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/morena-palida-moda-vestido-verde-largo-chaqueta-negra-gafas-sol-pie-calle-dia-contra-pared-edificio-ciudad-luz%201%20(1).png?v=1686770890169">
+      </div>
+  <div class="contenido-pq"> 
+      <a href="imagen.png" class="perfil">Velancy</a> <br>
+      <a href="articulo.html" class="titlo-articulo">El negro:rey de la moda</a>
+      <p>
+       El color negro en los oufit siempre ha sido el mejor aliado...
+      </p>
+      <hr>
+      <div class="fechas">
+        
+      <p>Hace 1 año</p>
+      <span>80 me gusta</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+      </div>
+    </div>
+      </article>
+    </section>
+    
+     <!-------------------- INICIO FOOTER  PEQUEÑO------------------------------->
+
+     <section id="footer-pq">
+      <div class="contenedor-footer-pq">
+      <button class="accordion">Servicio al cliente</button>
+      <div class="panel">
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    
+      <button class="accordion">Comprar en Velancy</button>
+      <div class="panel">
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+    
+      <button class="accordion">Ayuda</button>
+      <div class="panel">
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        
+      </div>
+    
+      <div class="redes-logo">
+        <div class="logo-pq">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="redes-pq">
+          <h4>Siguenos en</h4>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+          /> </a> 
+        <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /> </a> 
+        <a href="https://pin.it/2Zpex0u" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>  
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <!-------------------- FIN FOOTER PEQUEÑO ------------------------------->
+
+     <!-------------------- INICIO FOOTER MEDIANO ------------------------------->
+ <section id="footer-mediano">
+  <div class="logo2">
+    <a href="index.html"> <img src="img/logo-footer.png"></a>
+  </div>
+  <div class="subtitulo">Siguenos en</div>
+  <div class="redes">
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+    /></a>
+    <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+    /></a>
+     <a href="https://pin.it/2Zpex0u" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+    /></a>
+  </div>
+<div class="servicio">
+  <h4>Servicio al cliente</h4>
+  <a href="devoluciones.html">Garantias y devoluciones</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+<div class="compras-velancy">
+  <h4>Comprar en Velancy</h4>
+  <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+</div>
+<div class="ayuda">
+  <h4>Ayuda</h4>
+  <a href="tallas.html">Guia de tallas</a>
+  <a href="comentarios.html">Reseñas</a>
+</div>
+</section>
+
+
+<!-------------------- FIN FOOTER MEDIANO ------------------------------->
+    <!-------------------- INICIO FOOTER ------------------------------->
+    <section id="footer">
+      <div class="contenedor-footer">
+      <div class="contenido">
+        <div class="logo2">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="subtitulo">Siguenos en</div>
+        <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /></a> 
+         <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /></a> 
+         <a href="https://pin.it/2Zpex0u" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>
+        </div>
+      </div>
+      <div class="servicio">
+        <h4>Servicio al cliente</h4>
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="compras-velancy">
+        <h4>Comprar en Velancy</h4>
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+      <div class="ayuda">
+        <h4>Ayuda</h4>
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        </div>
+      </div>
+    </section>
+    <!-------------------- FIN FOOTER  ------------------------------->
+  </div>
+</div> 
+
+  </body>
+</html>

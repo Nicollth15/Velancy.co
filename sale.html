@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/logo-circular.png" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Sale</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="css/sale.css" />
+
+    <!-- The website JavaScript file -->
+  
+
+  </head>
+  <body>
+  
+    <div class="contenedor">
+
+
+
+           <!-------------------- INICIO MENU PEQUEÑO ------------------------------->
+
+<nav class="menu-pq">
+      
+  <div class="logo">
+    <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+  
+</div>
+<span class="menubtn" onclick="openNav()">&#9776; </span>
+
+  <div class="sideNav" id="sidenav" >
+    <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+    <a href="index.html" class="item-menu">INICIO</a>
+        <a href="nosotros.html" class="item-menu">NOSOTROS</a>
+        <a href="catalogo.html" class="item-menu">CATALOGO</a>
+        <a href="sale.html" class="item-menu">SALE</a>
+        <a href="blog.html" class="item-menu">BLOG</a>
+    <a href="#">
+      <div class="icono-carrito">
+        <a href="#" onclick="openWindow()"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+          width="30px"
+          height="30px"
+        /> </a> 
+      
+      </div>
+      <div class="offcanvas offcanvas-end show">
+        <div class="encabezado-carrito">
+          <h2>Mi carrito</h2>
+          <button id="cerrar" type="button" onclick="closeWindow()">&#10006;</button>
+        </div>
+        <div class="contenedor-carrito">
+          <div class="producto-carrito"> Lista de productos 
+            <div id="dos"></div>
+          </div>
+          
+          <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+        </div>
+      </div></a>
+  </div>
+  </nav>
+
+  <!-------------------- FIN MENU PEQUEÑO ------------------------------->
+
+    <!-------------------- INICIO MENU ------------------------------->
+      <nav id="menu">
+        <div class="contenedor-menu">
+        <div class="logo">
+        <a href="index.html"> <img src="img/logo-version-grande.png"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li>
+            <a href="catalogo.html">CATÁLOGO</a>
+            
+          </li>
+          <li><a href="sale.html">SALE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+       
+          <div class="icono-carrito">
+            <a href="#" onclick="openWindowG()" > <img
+              src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/bolsa-de-papel-grande%202.png?v=1685566782960"
+              width="30px"
+              height="30px"
+            /> </a> 
+          </div>
+          <div class="offcanvas offcanvas-end show" id="uno">
+            <div class="encabezado-carrito">
+              <h2>Mi carrito</h2>
+              <button id="cerrar" type="button" onclick="closeWindowG()">&#10006;</button>
+            </div>
+            <div class="contenedor-carrito">
+              <div class="producto-carrito"> Lista de productos 
+                <div id="lista-compras"></div>
+              </div>
+              
+               <a type="button" class="boton" href onclick="openVentana()">Pedir</a>
+            </div>
+          </div>
+          </div>
+          </nav>
+         
+    <!-------------------- FIN MENU ------------------------------->
+    
+<!-------------------- FIN MENU ------------------------------->
+    
+    <!-------------------- INICIO ENCABEZADO ------------------------------->
+    <div id="titulo">
+       <h1>
+     ¡Nuestras ofertas te esperan!
+    </h1>
+    </div>
+   <div id="ofertas">
+    <marquee direction="right">SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO &#8226;  SALE DEL 50% DE DESCUENTO</marquee>
+    </div>
+    <div id="ir_arriba_boton" class="ocultar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg>
+  </div>
+       <!-------------------- FIN ENCABEZADO ------------------------------->
+    
+      
+
+    <!--------------------INICIO FILTRO -------------->
+  <div class="wrap">
+
+    <div class="store">
+      <div class="categorias-product">
+      <a href="#" class="item" category="all">Todo</a>
+      <a href="#" class="item" category="Jeans">Jeans</a>
+      <a href="#" class="item" category="Sacos">Sacos</a>
+      <a href="#" class="item" category="Chaquetas">Chaquetas</a>
+      <a href="#" class="item" category="Blusas">Blusas</a>
+      <a href="#" class="item" category="Vestidos">Vestidos</a>
+      <a href="#" class="item" category="Gabanes">Gabanes</a>
+      </div>
+
+      <section class="productos-container">
+        <div class="producto-item " category="Blusas">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/blusa9.png';" onmouseover="this.src='img/blusa9-hover.png';" src="img/blusa9.png"></a>
+           <a href="#" onclick="add('Blusas estampada ($40.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Blusa estampada</p>
+             <span>$40.000</span>
+           
+         </div>
+
+         <div class="producto-item " category="Sacos">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/blusa7.png';" onmouseover="this.src='img/blusa7-hover.png';" src="img/blusa7.png"></a>
+           <a href="#" onclick="add('Saco beige corto($50.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Saco beige corto</p>
+             <span>$50.000</span>
+           
+         </div>
+
+         <div class="producto-item " category="Vestidos">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/vestido3.png';" onmouseover="this.src='img/vestido3-hover.png';" src="img/vestido3.png"></a>
+           <a href="#" onclick="add('Vestido azul flores ($50.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Vestido azul flores</p>
+             <span>$50.000</span>
+           
+         </div>
+
+         <div class="producto-item " category="Chaquetas">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/chaqueta7.png';" onmouseover="this.src='img/chaqueta7-hover.png';" src="img/chaqueta7.png"></a>
+           <a href="#" onclick="add('Chaqueta capota peluche($100.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Chaqueta capota peluche</p>
+             <span>$100.000</span>
+           
+         </div>
+        
+         <div class="producto-item " category="Jeans">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/jean8.png';" onmouseover="this.src='img/jean8-hover.png';" src="img/jean8.png"></a>
+           <a href="#" onclick="add('Mom jean azul oscuro($80.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Mom jean azul oscuro</p>
+             <span>$80.000</span>
+           
+         </div>
+        
+
+         <div class="producto-item " category="Sacos">
+          <div class="producto">
+            <a href="producto.html"> <img class="imagen" onmouseout="this.src='img/saco4.png';" onmouseover="this.src='img/saco4-hover.png';" src="img/saco4.png"></a>
+           <a href="#" onclick="add('Saco verde aldogon ($60.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Saco verde aldogon</p>
+             <span>$60.000</span>
+           
+         </div>
+        
+         <div class="producto-item " category="Blusas">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/blusa12.png';" onmouseover="this.src='img/blusa12-hover.png';" src="img/blusa12.png"></a>
+           <a href="#" onclick="add('Camiseta negra estampada($30.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Camiseta negra estampada</p>
+             <span>$30.000</span>
+           
+         </div>
+
+         <div class="producto-item " category="Gabanes">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/blazer1.png';" onmouseover="this.src='img/blazer1-hover.png';" src="img/blazer1.png"></a>
+           <a href="#" onclick="add('Blazer camel($80.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Blazer camel</p>
+             <span>$80.000</span>
+           
+         </div>
+        
+         <div class="producto-item " category="Blusas">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/blusa11.png';" onmouseover="this.src='img/blusa11-hover.png';" src="img/blusa11.png"></a>
+           <a href="#" onclick="add('Blusa tipo polo estampada($40.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Blusa tipo polo estampada</p>
+             <span>$40.000</span>
+           
+         </div>
+
+         <div class="producto-item " category="Jeans">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/jean7.png';" onmouseover="this.src='img/jean7-hover.png';" src="img/jean7.png"></a>
+           <a href="#" onclick="add('Pantalon bota campana($60.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Pantalon bota campana</p>
+             <span>$60.000</span>
+           
+         </div>
+
+         <div class="producto-item " category="Vestidos">
+          <div class="producto">
+            <a href="producto.html"><img class="imagen" onmouseout="this.src='img/vestido5.png';" onmouseover="this.src='img/vestido5-hover.png';" src="img/vestido5.png"></a>
+           <a href="#" onclick="add('Vestido rayado ($70.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Vestido rayado</p>
+             <span>$70.000</span>
+           
+         </div>
+        
+         <div class="producto-item " category="Chaquetas">
+          <div class="producto">
+            <a href="producto.html"> <img class="imagen" onmouseout="this.src='img/chaqueta11.png';" onmouseover="this.src='img/chaqueta11-hover.png';" src="img/chaqueta11.png"></a>
+           <a href="#" onclick="add('Chaqueta en gamuza($120.000)')" class="boton-compra"><img src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/Group%2026.png?v=1686006833100"></a>
+           <button class="descuento-color">50%</button>
+          </div>
+           <p>Chaqueta en gamuza</p>
+             <span>$120.000</span>
+           
+         </div>
+      </section>
+    </div>
+  </div>
+
+
+  <!-------------------- INICIO FOOTER  PEQUEÑO------------------------------->
+
+  <section id="footer-pq">
+    <div class="contenedor-footer-pq">
+    <button class="accordion">Servicio al cliente</button>
+    <div class="panel">
+      <a href="devoluciones.html">Garantias y devoluciones</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  
+    <button class="accordion">Comprar en Velancy</button>
+    <div class="panel">
+      <a href="compras.html#compras-titulo">Compras</a>
+      <a href="compras.html#envios-titulo">Envios</a>
+    </div>
+  
+    <button class="accordion">Ayuda</button>
+    <div class="panel">
+      <a href="tallas.html">Guia de tallas</a>
+      <a href="comentarios.html">Reseñas</a>
+      
+    </div>
+  
+    <div class="redes-logo">
+      <div class="logo-pq">
+        <a href="index.html"> <img src="img/logo-footer.png"></a>
+      </div>
+      <div class="redes-pq">
+        <h4>Siguenos en</h4>
+      <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /> </a> 
+      <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+        /> </a> 
+      <a href="https://pin.it/2Zpex0u" target="_blank"><img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+        /></a>  
+      </div>
+    </div>
+    </div>
+  </section>
+  
+<!-------------------- FIN FOOTER PEQUEÑO ------------------------------->
+
+
+ <!-------------------- INICIO FOOTER MEDIANO ------------------------------->
+ <section id="footer-mediano">
+  <div class="logo2">
+    <a href="index.html"> <img src="img/logo-footer.png"></a>
+  </div>
+  <div class="subtitulo">Siguenos en</div>
+  <div class="redes">
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+    /></a>
+    <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+    /></a>
+     <a href="https://pin.it/2Zpex0u" target="_blank"><img
+      src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+    /></a>
+  </div>
+<div class="servicio">
+  <h4>Servicio al cliente</h4>
+  <a href="devoluciones.html">Garantias y devoluciones</a>
+  <a href="contacto.html">Contacto</a>
+</div>
+<div class="compras-velancy">
+  <h4>Comprar en Velancy</h4>
+  <a href="compras.html#compras-titulo">Compras</a>
+  <a href="compras.html#envios-titulo">Envios</a>
+</div>
+<div class="ayuda">
+  <h4>Ayuda</h4>
+  <a href="tallas.html">Guia de tallas</a>
+  <a href="comentarios.html">Reseñas</a>
+</div>
+</section>
+
+
+<!-------------------- FIN FOOTER MEDIANO ------------------------------->
+    
+    
+      <!-------------------- INICIO FOOTER ------------------------------->
+      <section id="footer">
+      <div class="contenedor-footer">
+      <div class="contenido">
+        <div class="logo2">
+          <a href="index.html"> <img src="img/logo-footer.png"></a>
+        </div>
+        <div class="subtitulo">Siguenos en</div>
+        <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"> <img
+          src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/facebook%201.png?v=1686058629241"
+        /></a> 
+         <a href="https://instagram.com/velancy_co?igshid=MmU2YjMzNjRlOQ==" target="_blank"><img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/instagram%201.png?v=1686062758730"
+          /></a> 
+         <a href="https://pin.it/2Zpex0u" target="_blank"> <img
+            src="https://cdn.glitch.global/4573b126-8ae6-4f69-ab76-f66ec21d2080/logotipo-de-pinterest%201.png?v=1686062910101"
+          /></a>
+        </div>
+      </div>
+      <div class="servicio">
+        <h4>Servicio al cliente</h4>
+        <a href="devoluciones.html">Garantias y devoluciones</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="compras-velancy">
+        <h4>Comprar en Velancy</h4>
+        <a href="compras.html#compras-titulo">Compras</a>
+        <a href="compras.html#envios-titulo">Envios</a>
+      </div>
+      <div class="ayuda">
+        <h4>Ayuda</h4>
+        <a href="tallas.html">Guia de tallas</a>
+        <a href="comentarios.html">Reseñas</a>
+        </div>
+      </div>
+    </section>
+  
+  </div>
+</div>
+      <!-------------------- FIN FOOTER  ------------------------------->
+      <script src="js/jquery-3.7.0.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>
